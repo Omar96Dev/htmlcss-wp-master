@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  header {
+    margin-bottom: 20px;
+  }
+  
+  li {
+      display: inline-block;
+      list-style: none;
+  }
+
+  a {
+      text-decoration: none;
+      
+      padding: 10px;
+      margin-left: -10px;
+  }
+  
+  footer {
+    height: 50px;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  a, p {
+    color: #c0c0c0;
+  }
+
+  span {
+      color:red;
+    }
+
+    h5 {
+        font-weight: normal;
+        margin-bottom: 10px;
+    }
+    
+    .logo {
+        height: 80px;
+        margin-bottom: 40px
+        
+    }
+    
+    .container {
+        width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .hero-section {
+        background-image: url(../img/banner.jpg);
+        background-size: cover;
+        background-position: center; 
+        height: 500px;
+        margin-bottom: 40px;
+        border-radius: 10px;
+        position: relative;
+    }
+    
+    .hero-section::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color:rgba(0, 0, 0, 0.2);
+        border-radius: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .hero-title {
+        width: 50%;
+        color: white;
+        position: absolute;
+        bottom: 80px;
+        left: 40px;
+    }
+
+    .hero-title > h2 {
+        font-weight: normal;
+    }
+
+    .hero-title > p {
+        color: white;
+    }
+
+    .main-container {
+        padding-bottom: 20px;
+    }
+    
+    .main-container-header {
+
+        margin-bottom: 40px;
+    }
+
+    .row::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    .col {
+      float: left;
+      width: 18%;  
+    }
+    
+    .col-center {
+      width: calc(64% - 40px);
+      margin: 0 20px;
+      
+    }
+
+    .col-img, .img-col {
+        width: 100%;
+        height: 150px;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+        margin-bottom: 20px;
+    }
+     .img-col {
+         object-fit: cover;    
+    } 
+    
+    .col-img::after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color:rgba(0, 0, 0, 0.2);
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    footer > p {
+        color: black;
+    }
